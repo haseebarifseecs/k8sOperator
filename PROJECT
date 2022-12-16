@@ -6,4 +6,14 @@ plugins:
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: k8soperator
 repo: github.com/k8sOperator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: custom.k8s.io
+  group: cache
+  kind: Memcached
+  path: github.com/k8sOperator/api/v1alpha1
+  version: v1alpha1
 version: "3"
